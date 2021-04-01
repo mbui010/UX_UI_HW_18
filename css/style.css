@@ -1,6 +1,13 @@
-.inline-block {
- display: inline-block;
-vertical-align: top;
+body {
+margin: 0px 100px;
+}
+h1 {
+  -align: center;
+}
+.navigation {
+display:flex;
+  /*  display: inline-block;
+vertical-align: top; */
 }
 
 .logo {
@@ -24,6 +31,33 @@ ul {
   width: 500px;
   margin: 0 auto;
 }
+.flexContainer {
+  display:flex;
+}
+.flexContainer div {
+ width: 33%;
+ background-color: grey;
+ border-radius: 5px;
+}
+.flexContainer div img{
+height: 100px;
+width: 100px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+.workGrid {
+  display:grid;
+}
+.item1 {
+  grid-area: myArea;
+}
+.grid-container {
+  display:grid;
+  grid-template-areas:'myArea myArea myArea myArea myArea';
+}
+
+
 footer{
   background-color: #373738;
   padding: 0 20px 0 20px;
@@ -34,27 +68,15 @@ footer ul {
   padding: 0 250px 0 250px;
 }
 
-
-
-
-
-
-/* .nav {
-  background-color: yellow; 
-  list-style-type: none;
-  text-align: center; 
-  vertical-align: top;
-  padding: 0;
-  margin: 0;
-} */
-
-/* .nav li {
-  display: inline-block;
-  font-size: 20px;
-  padding: 20px;
+@media only screen and (max-width: 600px){
+  .flexContainer { 
+    flex-direction: column;
+  }
+  .flexContainer div {
+    width: 100%;
+  }
 }
-.logo {
-  width: 23%;
-  padding: 1%;
-}
- */
+
+
+
+
