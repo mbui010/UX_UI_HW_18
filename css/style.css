@@ -2,18 +2,50 @@ body {
 margin: 0px 100px;
 }
 h1 {
-  -align: center;
+  text-align: center;
+  
 }
 .navigation {
 display:flex;
+background-color: #B0E0E6 ;
+
   /*  display: inline-block;
 vertical-align: top; */
 }
+.topnav {
+  background-color: #B0E0E6 ;
+  overflow: hidden;
+  text-align: end;
+}
 
-.logo {
-  width: 23%;
-  padding: 1%;
-  text-align: center;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: end;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(129, 208, 253);
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #1b5381;
+  color: white;
+
+
+
+}
+.logo{
+  
+  padding: 10px;
+  
 }
 nav {
   width: 73%;
@@ -24,21 +56,75 @@ ul {
   margin-left: auto;
 }
 .heroImg {
-  height: 600px;
+  height: 500px;
   padding: 25px;
+}
+.content img{
+  padding: 20px;
+}
+
+.resumeButton {
+ text-align: center;
+}
+.content{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: burlywood;
+  border-radius: 10px;
+
+
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 .content {
   width: 500px;
   margin: 0 auto;
 }
+.h3 {
+  margin: auto;
+
+}
+.p{
+  text-align: center;
+}
 .flexContainer {
   display:flex;
+  column-gap: 25px;
 }
 .flexContainer div {
  width: 33%;
- background-color: grey;
- border-radius: 5px;
+ background-color: #B0E0E6;
+ border-radius: 10px;
+ flex-direction: column;
+padding: 20px;
+column-gap: 30px;
 }
+
+.NSA img {
+  float: left;
+  width: 400px;
+  height: 400px;
+ 
+}
+
+.Child img {
+  float: left;
+  width: 400px;
+  height: 400px;
+}
+
+.DosBot img {
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+
 .flexContainer div img{
 height: 100px;
 width: 100px;
@@ -46,23 +132,26 @@ margin-left: auto;
 margin-right: auto;
 display: block;
 }
+.img3{
+  width: 100px;
+  height: auto;
+}
+.myWork{
+  display: grid;
+
+}
 .workGrid {
   display:grid;
 }
-.item1 {
-  grid-area: myArea;
-}
-.grid-container {
-  display:grid;
-  grid-template-areas:'myArea myArea myArea myArea myArea';
-}
 
 
-footer{
-  background-color: #373738;
+
+.footer{
+  background-color: #B0E0E6;
   padding: 0 20px 0 20px;
 }
 footer ul {
+  background-color: #B0E0E6;
   display: inline-block;
   vertical-align: top;
   padding: 0 250px 0 250px;
@@ -75,7 +164,19 @@ footer ul {
   .flexContainer div {
     width: 100%;
   }
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "research picture"
+  "wireframe picture"
+  "design picture"
+  ;
 }
+}
+
 
 
 
