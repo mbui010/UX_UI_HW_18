@@ -11,30 +11,34 @@
 
 <body>
     <header class="navigation">
-        <div class="inline-block logo">
-            <img src="./images/MB..png" alt="Logo">
+        <div class="logo">
+            <img src="./images/MB..png" alt="Logo" width=100px height=50px >
 
         </div>
-        <nav class="inline-block">
-            <ul class="navigation">
-                <li>about</li>
-                <li>skills</li>
-                <li>work</li>
-                <li>contact</li>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+          </div>
+        <!-- <nav class="inline-block">
+            <ul class="category">
+                <li>about</li> <li>skills</li> <li>work</li><li>contact</li>
             </ul>
 
-        </nav>
+        </nav> -->
     </header>
     <section class="heroImg">
         <div class="content">
-            <img src="./images/IMG_1560 1-2.png" alt="Profile Picture">
+            <img src="./images/IMG_1560 1-2.png" alt="Profile Picture" class="center"> 
             <p>
                 Hello! My name is Michelle Bui and I am a UI/UX designer.
                 I am very passionate about building projects from the ground up
                 and having a strong eye for design. I love to explore color theory and
                 typography!
             </p>
-            <button>Download Resume</button>
+            <button id="resumeButton" >Download Resume</button>
         </div>
     </section>
     <section class="mySkills">
@@ -79,21 +83,25 @@
             My Work
         </h1>
         <div class="workGrid">
-            <div class="item1">
-                <img src=>
+            <div class="DosBot">
+                <div style="text-align: left"><img src="./images/dosbot.png" alt="dosbot" width="100"/>
+            </div>
+            <div>
                 <h4>
                     DosBot App Design
                 </h4>
                 <p>
-                    A automated robot assistance app for disabled users 
+                    A robot assistance app for disabled users
                 </p>
                 <button>
                     Find out more
                 </button>
             </div>
-            <div class="item2">
-                <img src="./images/home page copy.png" alt="nsa photo">
-                <h4>
+            <div class="NSA">
+                <div style="text-align: left"><img src="./images/home page copy.png" alt="nsa photo" width="100"/></div>
+            </div>
+            <div class="NSAinfo">
+                <h4 class= "heading">
                     NSA Redesign Website
                 </h4>
                 <p>
@@ -103,8 +111,11 @@
                     Find out more
                 </button>
             </div>
-            <div class="item3">
-                <img src=>
+            
+            <div class="Child">
+                <div style="text-align: left"><img src="./images/non profit laptop.png" alt="non profit" width="100"/>
+            </div>
+            <div>
                 <h4>
                     Child Foundation Redesign
                 </h4>
@@ -116,9 +127,10 @@
                     Find out more
                 </button>
             </div>
-            <h3>
+              
+            <button>
                 View all Projects
-            </h3>
+            </button>
         </div>
     </section>
     <footer>
